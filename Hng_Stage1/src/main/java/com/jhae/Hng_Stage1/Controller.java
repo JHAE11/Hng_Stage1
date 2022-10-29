@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api")
 public class Controller {
-    @GetMapping("/me")
+    @GetMapping
     public ResponseEntity<Model> showUser() {
         Model model = new Model();
         return ResponseEntity.ok(model);
